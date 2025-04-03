@@ -18,6 +18,10 @@
     justify-content: space-around;
     border-bottom: solid black 1px;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar-p1__name {
@@ -32,6 +36,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    background-color: transparent;
 }
 
 .navbar-p2 input {
@@ -47,7 +52,50 @@
 .navbar-p3 {
     display: flex;
     gap: 10px;
+
 }
+
+.navbar-p3__learning {
+    position: relative;
+}
+
+.navbar-p3__learning__popup {
+    position: absolute;
+    background-color: white;
+    color: black;
+    border: solid black 2px;
+    border-radius: 10px;
+    margin-right: 0%;
+    display: none;
+    width: fit-content;
+    margin: 10px;
+    padding: 10px;
+}
+
+.navbar-p3__learning:hover .navbar-p3__learning__popup {
+    display: block;
+}
+
+.navbar-p3__profile {
+    position: relative;
+}
+
+.navbar-p3__profile__popup {
+    position: absolute;
+    background-color: white;
+    color: black;
+    border: solid black 2px;
+    border-radius: 10px;
+    margin-left: 0%;
+    display: none;
+    width: fit-content;
+    padding: 10px;
+}
+
+.navbar-p3__profile:hover .navbar-p3__profile__popup {
+    display: block;
+}
+
 
 .categories {
     display: flex;
@@ -63,6 +111,40 @@
     border-radius: 30px;
     color: white;
 }
+
+
+.sale-image {
+    position: relative;
+}
+
+.sale-image__offer {
+    position: absolute;
+    background-color: white;
+    width: 15%;
+    padding: 10px;
+    border: solid black 3px;
+    top: 10%;
+    left: 5%;
+    height: fit-content;
+}
+
+.sale-image__offer p {
+    margin-top: 10px;
+
+}
+
+.sale-image__offer__button button {
+    background-color: purple;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+
 
 .sale-image img {
     width: 100%;
@@ -84,11 +166,11 @@
 .course-card img {
     width: 200px;
     height: 50%;
-    
+
 }
 
 
-.course-card p{
+.course-card p {
     padding-bottom: 3px;
     padding-top: 5px;
 }
@@ -99,7 +181,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
-    
+
 }
 
 .topics {
@@ -113,7 +195,7 @@
     margin-top: 10px;
     flex-wrap: wrap;
     border: solid black 10px;
-  
+
 
 
 }
@@ -144,33 +226,33 @@
 
 }
 
-.footer{
+.footer {
     background-color: black;
     color: white;
     padding: 30px;
 }
 
-.footer__s1{
+.footer__s1 {
     display: flex;
     gap: 20px;
 
 }
 
-.footer__s2{
+.footer__s2 {
     display: flex;
     justify-content: space-between;
     margin: 20px;
 }
 
-.footer__s1 p, .footer__s1 h3{
+.footer__s1 p,
+.footer__s1 h3 {
     margin: 20px;
 
 }
 
-.footer__s1 h3{
+.footer__s1 h3 {
     background-color: white;
     color: black;
     border-radius: 30px;
     padding: 10px;
 }
-
